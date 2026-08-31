@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#120e1d">
+  <meta name="description" content="A VGA-style prayer practice using prayers from the 1662 Book of Common Prayer.">
+  <title>Prayer Warrior</title>
+  <script type="module" crossorigin src="./assets/index-Cbwm2vmH.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CdpNvaGM.css">
+</head>
+<body>
+  <main id="app">
+    <section class="selection-screen" id="selection-screen" aria-labelledby="game-title">
+      <div class="title-crest" aria-hidden="true">✦</div>
+      <h1 id="game-title">Prayer Warrior</h1>
+      <p class="subtitle">Enter the Prayer Room. Pray some Old School Prayers.</p>
+      <div class="character-choices" aria-label="Choose your prayer warrior">
+        <button class="character-card character-card--male" data-character-choice="male" aria-label="Choose man">
+          <span class="portrait portrait--male" aria-hidden="true"><img src="./assets/warrior-male.png" alt=""></span>
+          <strong>Brother</strong><span>Choose man</span>
+        </button>
+        <button class="character-card character-card--female" data-character-choice="female" aria-label="Choose woman">
+          <span class="portrait portrait--female" aria-hidden="true"><img src="./assets/warrior-female.png" alt=""></span>
+          <strong>Sister</strong><span>Choose woman</span>
+        </button>
+      </div>
+
+    </section>
+
+    <section class="game-screen" id="game-screen" hidden aria-label="Prayer room">
+      <div class="scene" aria-hidden="true">
+        <div class="vignette"></div>
+        <div class="character character--male" data-testid="character" data-state="ready">
+          <div class="aura"></div><div class="spark spark--1">✦</div><div class="spark spark--2">✦</div><div class="spark spark--3">✦</div>
+          <img class="character-sprite" src="./assets/warrior-male.png" alt="">
+        </div>
+      </div>
+
+      <header class="hud">
+        <button class="pixel-button pixel-button--small" id="change-character">↶ Character</button>
+        <div class="counter"><span>Prayers offered</span><strong data-testid="prayed-count">0</strong></div>
+      </header>
+
+      <article class="prayer-panel" aria-live="polite">
+        <div class="panel-ornament" aria-hidden="true">✦</div>
+        <p class="category" id="prayer-category">Prayer</p>
+        <h2 id="prayer-title">A Prayer</h2>
+        <div class="prayer-scroll" tabindex="0">
+          <p id="prayer-text" data-testid="prayer-text"></p>
+        </div>
+        <div class="response" id="response" role="status" hidden>
+          <span class="response-mark" aria-hidden="true">✦</span>
+          <p>Your prayer is heard by the Father who sees in secret.</p>
+          <small>Matthew 6:6</small>
+        </div>
+        <button class="pixel-button pixel-button--pray" id="prayed-button">Prayed</button>
+        <button class="pixel-button pixel-button--next" id="next-button" hidden>Pray Another Prayer</button>
+        <p class="formation-note">Completion records practice, not spiritual maturity.</p>
+      </article>
+
+      <button class="source-toggle" id="source-toggle" aria-expanded="false" aria-controls="source-note">Source</button>
+      <aside class="source-note" id="source-note" hidden></aside>
+    </section>
+  </main>
+</body>
+</html>
