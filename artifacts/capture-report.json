@@ -1,0 +1,42 @@
+[
+  {
+    "name": "desktop",
+    "errors": [],
+    "metrics": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "body": {
+        "width": 1440,
+        "height": 900
+      },
+      "prayerPanel": {
+        "left": 828.015625,
+        "right": 1389.609375,
+        "top": 63,
+        "bottom": 837
+      }
+    }
+  },
+  {
+    "name": "mobile",
+    "errors": [],
+    "metrics": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "body": {
+        "width": 390,
+        "height": 844
+      },
+      "prayerPanel": {
+        "left": 0,
+        "right": 390,
+        "top": 354.484375,
+        "bottom": 844
+      }
+    }
+  }
+]
